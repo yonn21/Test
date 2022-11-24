@@ -29,13 +29,16 @@ const clickMenu = (e) => {
 			content.innerHTML = `<p class="content_text">${item.content}</p>`;
 		}
 	});
+	let x = screen.width;
+	if (x <= 425) {
+		closeMenu();
+	}
 };
 
 const closeMenu = () => {
 	let menu = getELE("menu_nav");
 	menu.style.display = "none";
 };
-closeMenu();
 
 const showMenu = () => {
 	let menu = getELE("menu_nav");
