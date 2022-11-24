@@ -1,0 +1,103 @@
+header {
+    height: 80px;
+    background-color: red;
+    position: relative;
+}
+
+header .header_circle {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.menu {
+    height: 550px;
+}
+
+.menu .menu_nav {
+    background-color: blueviolet;
+    height: 550px;
+    color: white;
+}
+
+.menu .menu_nav h4,
+.menu .menu_nav .menu_btn {
+    padding: 20px 30px;
+    border-bottom: 2px solid #000;
+    cursor: pointer;
+}
+
+.menu .menu_nav .menu_btn span {
+    margin-left: 10px;
+}
+
+.menu .menu_nav .menu_btn i {
+    background-color: white;
+}
+
+.menu .menu_content .content_text {
+    line-height: 550px;
+    text-align: center;
+}
+
+footer {
+    height: 80px;
+    background-color: green;
+}
+
+footer p {
+    margin: 0 20px;
+    line-height: 80px;
+}
+
+.active,
+.menu_btn:hover {
+    background-color: white;
+    color: #000;
+}
+
+.menu_list {
+    display: none;
+}
+
+.close {
+    display: none;
+}
+
+@media screen and (max-width: 425px) {
+    #menu_nav {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        height: 630px;
+        top: 0;
+    }
+    .menu_nav .close {
+        display: block;
+        height: 80px;
+        width: 100%;
+        font-size: 30px;
+        color: white;
+        line-height: 80px;
+        padding-left: 20px;
+    }
+    .menu_btn, .menu_nav h4 {
+        width: 80%;
+    }
+    .menu .menu_list {
+        display: block;
+        width: 30px;
+        height: 30px;
+        display: block;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+    }
+}

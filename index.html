@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Title</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="./index.css" />
+	</head>
+	<body>
+		<header>
+			<div class="header_circle"></div>
+		</header>
+
+		<section class="menu container-fluid">
+			<div class="row">
+                <div class="menu_list" onclick="showMenu()" id="menu_list"> 
+                    <i class="fa fa-list-ul" onclick="showMenu()"></i>
+                </div>
+				<div class="menu_nav col-sm-3 col-12 p-0" id="menu_nav">
+                    <div class="close" onclick="closeMenu()">
+                        <i class="fa fa-times"></i>
+                    </div>
+					<h4 class="m-0">MENU TITLE</h4>
+					<div class="menu_btn active" data-id="1" onclick="clickMenu(event)">
+						<i class="fa fa-square-full"></i><span>MENU 1</span>
+					</div>
+					<div class="menu_btn" data-id="2" onclick="clickMenu(event)">
+						<i class="fa fa-circle"></i><span>MENU 2</span>
+					</div>
+					<div class="menu_btn" data-id="3" onclick="clickMenu(event)">
+						<i class="fa fa-play"></i><span>MENU 3</span>
+					</div>
+				</div>
+				<div class="menu_content col-sm-9 col-12" id="content">
+                </div>
+			</div>
+		</section>
+
+        <footer>
+            <P>DEMO FOOTER</P>
+        </footer>
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
+			integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script src="./index.js"></script>
+	</body>
+</html>
